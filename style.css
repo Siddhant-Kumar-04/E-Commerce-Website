@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     font-family: 'Roboto', sans-serif;
+    /* outline: 1px solid red; */
 }
 
 .header{
@@ -69,7 +70,7 @@ a img{
     margin:70px 0px;
     .container
     {
-        max-width :100vw;
+        max-width :1300px;
         margin:auto;
         padding:0px 25px;
         display:flex;
@@ -121,7 +122,6 @@ a img{
         flex-direction: column;
         min-width: 200px;
         padding:10px;
-        margin-bottom: 50px;
         flex-basis: 20%;
         margin-bottom:50px;
         cursor: pointer;
@@ -202,5 +202,222 @@ a img{
     }
 
 
+}
+
+.testimonial{
+    margin-top:60px;
+    background-color:rgba(255,255,255,0.7);
+    padding:80px 0px;
+    margin:20px auto;
+    .container{
+        display:flex;
+        flex-wrap:wrap;
+        max-width:1080px;
+        margin:auto;
+        padding:0px 50px;
+        justify-content: space-around;
+        align-items: center;
+        gap:10px;
+        
+
+        .testimonailaCards{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-width: 150px;
+            flex-basis: 30%;
+            padding: 25px 0;
+            margin:20px auto;
+            /* border:2px solid #f0f0f5; */
+            box-shadow: 0px 0px 10px  rgba(0,0,0,0.1);
+            /* margin:50px 20px; */
+            .paragraph{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                color:#555;
+                font-size: 10px;
+                max-width:70%;
+                text-align:center;
+                margin:10px 10px;
+            }
+        }
+
+        .rating{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin:10px 10px;
+            padding:10px 10px;
+            img{
+                
+                object-fit: contain;
+            }
+        }
+        .user{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:10px 10px;
+            img{
+
+                width:50px;
+                height:50px;
+                border-radius: 50%;
+                object-fit: cover;
+                padding:10px 10px;
+               
+            }
+            span{
+                color:black;
+                font-weight: bold;
+                font-size:14px;
+            }
+        }
+        
+
+    }
+
+}
+
+.testimonailaCards:hover{
+    transform: translateY(-10px);
+    transition: transform 0.5s;
+}
+
+.branding-section{
+    padding:50px 0px;
+    .branding-image-section{
+        display:flex;
+        max-width:1080px;
+        margin:auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding:10px 10px;
+
+    }
+    img{
+        object-fit: contain;
+        filter: grayscale(100%);
+        cursor: pointer;
+        /* transition: transform 0.5s; */
+    }
+
+    img:hover{
+        filter:grayscale(0%);
+    }
+}
+
+footer{
+    background-color: #222222;
+    padding:10px 0px;
+   
+    .mainFooter{
+        /* min-width:1080px; */
+        max-width: 1300px;
+        margin:20px auto;
+        padding:10px 10px;
+        .container{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            color:#fff;
+            font-size: 14px;
+            padding:10px 10px;
+            
+            .left{
+                flex-basis: 30%;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .color-span{
+                    color:orangered;
+                    font-size:15px;
+                    /* font-weight: bold; */
+                    margin:10px 10px;
+                }
+                span{
+                    color:white;
+                    margin:10px 10px;
+                }
+                .logos{
+                   display:flex;
+                   justify-content: center;
+                     align-items: center;
+                     padding:10px 10px;
+                     gap:5px;
+                     img{
+                        height:30px;
+                        width:100px;
+                        object-fit: contain;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .right{
+                flex-basis:12%;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin:5px 5px;
+                 span{
+                    color:orangered;
+                    font-size:15px;
+                    /* font-weight: bold; */
+                    margin:4px 4px;
+                   
+                }
+                 ul{
+                    list-style: none;
+                    padding:0px;
+                    margin:0px;
+                    li{
+                        text-align: center;
+                        color:white;
+                        margin:6px 6px;
+                    }
+                
+            }
+            }
+
+            .middle{
+                flex:1;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin:5px 5px;
+                span{
+                    color:orangered;
+                    font-size:15px;
+                    font-weight: bold;
+                    margin:4px 4px;
+                   
+                }
+
+                ul{
+                    list-style: none;
+                    padding:0px;
+                    margin:0px;
+                    li{
+                        text-align: center;
+                        color:white;
+                        margin:6px 6px;
+                    }
+                }
+            }
+
+        }
+
+
+        
+    }
 }
 
