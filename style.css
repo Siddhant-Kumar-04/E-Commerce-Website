@@ -129,11 +129,12 @@ a img{
         
 
         .product-title
-        {
+        {   padding-top:10px;
             color:#555;
         }
         .product-price
         {
+            
             color:#555;
             font-size: 14px;;
         }
