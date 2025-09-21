@@ -348,11 +348,13 @@ footer{
                 }
                 .logos{
                    display:flex;
+                    flex-wrap: wrap;
                    justify-content: center;
                      align-items: center;
                      padding:10px 10px;
                      gap:5px;
                      img{
+                        
                         height:30px;
                         width:100px;
                         object-fit: contain;
@@ -421,4 +423,51 @@ footer{
         
     }
 }
+
+.allProductsSection{
+    display:flex;
+    flex-direction: column;
+    max-width: 1080px;
+    padding:0px 20px;
+    margin:auto;
+    .allProductSectionLabel
+    {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:100px 0px 50px;
+        padding:0px 12px;
+        select{
+          border:1px solid #ff523b;
+          padding:5px;
+          outline:none;
+
+        }
+
+    }
+
+    .PaginationButtonContainer{
+        display:flex;
+        align-items: center;
+        gap:10px;
+        margin-bottom: 80px;
+        padding:0px 12px;
+        .paginationButtons{
+            display:inline-block;
+            border:1px solid #ff523b;
+            width:40px;
+            height:40px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            
+        }
+        .paginationButtons:hover{
+                background-color: #ff523b;
+                color:#fff;
+            }
+    }
+}
+
+
 
